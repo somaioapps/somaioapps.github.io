@@ -1,1 +1,1 @@
-google.com, pub-COLE_AQUI_O_PUBLISHER_ID_ADMOB, DIRECT, f08c47fec0942fa0
+google.com, pub-7212285636354689, DIRECT, f08c47fec0942fa0
