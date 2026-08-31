@@ -3,50 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Política de Privacidade — Tem em Casa?</title>
   <style>
-    body{margin:0;background:#f5f7fb;color:#10243a;font:16px/1.65 Arial,sans-serif}
-    main{max-width:860px;margin:auto;padding:48px 24px}
-    header{background:linear-gradient(135deg,#073b66,#00afa5);color:white;padding:32px;border-radius:28px}
-    section{background:white;margin-top:18px;padding:24px;border-radius:22px}
-    h1{margin:0}a{color:#007c76}
+    :root{--navy:#09223b;--teal:#00a99d;--bg:#f3f7f8;--card:#fff;--text:#142635;--muted:#5b6b77;--line:#dce8e8}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,Arial,sans-serif}
+    main{max-width:900px;margin:auto;padding:32px 18px 56px}header{background:linear-gradient(135deg,var(--navy),#075c68,var(--teal));color:#fff;padding:34px;border-radius:30px;box-shadow:0 18px 45px #006b6430}
+    h1{margin:0 0 8px;font-size:clamp(28px,5vw,44px);line-height:1.08}header p{margin:0;color:#d9fffb}.languages{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+    button{border:1px solid var(--line);background:var(--card);color:var(--text);padding:10px 16px;border-radius:999px;font-weight:800;cursor:pointer}button.active{background:var(--teal);border-color:var(--teal);color:#fff}
+    article{display:none}article.active{display:block}section{background:var(--card);margin-top:14px;padding:24px;border:1px solid var(--line);border-radius:24px}h2{margin:0 0 8px;font-size:20px}p{margin:8px 0}a{color:#007c76;font-weight:700}footer{text-align:center;color:var(--muted);margin-top:24px;font-size:13px}
+    @media(prefers-color-scheme:dark){:root{--bg:#071520;--card:#102330;--text:#edf9f8;--muted:#a8b8be;--line:#24404b}}
   </style>
 </head>
 <body>
 <main>
   <header>
-    <h1>Política de Privacidade</h1>
-    <p>Tem em Casa? · Somaio — atualização: 30 de agosto de 2026</p>
+    <h1 id="page-title">Política de Privacidade</h1>
+    <p>Tem em Casa? · Somaio — 31/08/2026</p>
   </header>
-  <section>
-    <h2>Resumo</h2>
-    <p>O Tem em Casa? organiza inventário doméstico e listas de compras. Os itens cadastrados ficam armazenados localmente no dispositivo. Não exigimos conta, nome ou cadastro pessoal.</p>
-  </section>
-  <section>
-    <h2>Dados e publicidade</h2>
-    <p>A versão gratuita utiliza o Google AdMob para exibir banners, anúncios intersticiais e anúncios intersticiais premiados opcionais. O Google e seus parceiros podem tratar identificadores do dispositivo, endereço IP, interações com anúncios e dados de diagnóstico para fornecer, medir e proteger a publicidade, conforme as configurações e o consentimento aplicáveis.</p>
-    <p>O conteúdo do inventário, quantidades, datas de validade e lista de compras não é enviado à Somaio nem usado para personalizar anúncios.</p>
-  </section>
-  <section>
-    <h2>Compras no aplicativo</h2>
-    <p>O Tem em Casa? PRO é uma compra única processada pela Google Play. A Somaio não recebe nem armazena números de cartão ou dados bancários. A Google Play processa o pagamento e fornece ao aplicativo os dados técnicos necessários para confirmar e restaurar a licença PRO.</p>
-  </section>
-  <section>
-    <h2>Armazenamento e controle</h2>
-    <p>Os dados funcionais permanecem no aparelho e podem ser removidos ao limpar os dados ou desinstalar o aplicativo. O limite diário de recompensas e o estado local da licença PRO também são salvos no dispositivo.</p>
-  </section>
-  <section>
-    <h2>Serviços de terceiros</h2>
-    <p>Consulte a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e as informações sobre <a href="https://policies.google.com/technologies/ads">publicidade do Google</a>. Em regiões onde exigido, o app deve solicitar as escolhas de consentimento aplicáveis antes da publicidade personalizada.</p>
-  </section>
-  <section>
-    <h2>Crianças</h2>
-    <p>O aplicativo é uma ferramenta de organização doméstica destinada ao público geral e não foi desenvolvido especificamente para crianças. Não coletamos conscientemente dados pessoais diretamente de crianças.</p>
-  </section>
-  <section>
-    <h2>Alterações e contato</h2>
-    <p>Esta política pode ser atualizada quando funcionalidades ou requisitos legais mudarem. Dúvidas: <a href="mailto:somaioapps@gmail.com">somaioapps@gmail.com</a>.</p>
-  </section>
+
+  <nav class="languages" aria-label="Language">
+    <button type="button" data-select="pt">Português</button>
+    <button type="button" data-select="en">English</button>
+    <button type="button" data-select="es">Español</button>
+  </nav>
+
+  <article data-lang="pt">
+    <section><h2>Resumo</h2><p>O Tem em Casa? organiza inventário doméstico, datas de validade e listas de compras. Os itens cadastrados ficam armazenados localmente no dispositivo. Não exigimos conta, nome ou cadastro pessoal.</p></section>
+    <section><h2>Dados e publicidade</h2><p>A versão gratuita utiliza o Google AdMob para exibir banners, anúncios intersticiais e anúncios intersticiais premiados opcionais. O Google e seus parceiros podem tratar identificadores do dispositivo, endereço IP, interações com anúncios e dados de diagnóstico para fornecer, medir e proteger a publicidade, conforme as configurações e o consentimento aplicáveis.</p><p>Ao concluir um vídeo premiado, o usuário gratuito recebe 20 minutos sem banners ou intersticiais. O benefício pode ser ativado no máximo três vezes por dia. O conteúdo do inventário e da lista de compras não é enviado à Somaio nem usado para personalizar anúncios.</p></section>
+    <section><h2>Compras no aplicativo</h2><p>O Tem em Casa? PRO é uma compra única que remove os anúncios permanentemente. O pagamento é processado pela Google Play. A Somaio não recebe nem armazena números de cartão ou dados bancários. A Google Play fornece ao aplicativo os dados técnicos necessários para confirmar e restaurar a licença PRO.</p></section>
+    <section><h2>Armazenamento e controle</h2><p>Os dados funcionais permanecem no aparelho e podem ser removidos ao limpar os dados ou desinstalar o aplicativo. O limite diário e o horário de término da pausa sem anúncios também são salvos localmente.</p></section>
+    <section><h2>Serviços de terceiros</h2><p>Consulte a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e as informações sobre <a href="https://policies.google.com/technologies/ads">publicidade do Google</a>. Em regiões onde exigido, o aplicativo deve solicitar as escolhas de consentimento aplicáveis.</p></section>
+    <section><h2>Crianças</h2><p>O aplicativo é uma ferramenta de organização doméstica destinada ao público geral e não foi desenvolvido especificamente para crianças. Não coletamos conscientemente dados pessoais diretamente de crianças.</p></section>
+    <section><h2>Alterações e contato</h2><p>Esta política pode ser atualizada quando funcionalidades ou requisitos legais mudarem. Dúvidas: <a href="mailto:somaioapps@gmail.com">somaioapps@gmail.com</a>.</p></section>
+  </article>
+
+  <article data-lang="en">
+    <section><h2>Summary</h2><p>Got It Home? organizes household inventory, expiration dates, and shopping lists. Items entered in the app are stored locally on the device. We do not require an account, name, or personal registration.</p></section>
+    <section><h2>Data and advertising</h2><p>The free version uses Google AdMob to display banners, interstitial ads, and optional rewarded interstitial ads. Google and its partners may process device identifiers, IP address, ad interactions, and diagnostic data to deliver, measure, and protect advertising, according to applicable settings and consent.</p><p>After completing a rewarded video, a free user receives 20 minutes without banners or interstitials. The benefit can be activated up to three times per day. Inventory and shopping-list content is not sent to Somaio or used to personalize ads.</p></section>
+    <section><h2>In-app purchases</h2><p>Got It Home? PRO is a one-time purchase that removes ads permanently. Payment is processed by Google Play. Somaio does not receive or store card numbers or banking details. Google Play provides the technical data required to confirm and restore the PRO license.</p></section>
+    <section><h2>Storage and control</h2><p>Functional data remains on the device and can be removed by clearing app data or uninstalling the app. The daily reward limit and the end time of an ad-free break are also stored locally.</p></section>
+    <section><h2>Third-party services</h2><p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and information about <a href="https://policies.google.com/technologies/ads">Google advertising</a>. Where required, the app must request applicable consent choices.</p></section>
+    <section><h2>Children</h2><p>The app is a household organization tool intended for a general audience and was not specifically designed for children. We do not knowingly collect personal data directly from children.</p></section>
+    <section><h2>Changes and contact</h2><p>This policy may be updated when features or legal requirements change. Questions: <a href="mailto:somaioapps@gmail.com">somaioapps@gmail.com</a>.</p></section>
+  </article>
+
+  <article data-lang="es">
+    <section><h2>Resumen</h2><p>¿Hay en Casa? organiza el inventario doméstico, las fechas de caducidad y las listas de compras. Los artículos registrados se almacenan localmente en el dispositivo. No exigimos una cuenta, nombre ni registro personal.</p></section>
+    <section><h2>Datos y publicidad</h2><p>La versión gratuita utiliza Google AdMob para mostrar banners, anuncios intersticiales y anuncios intersticiales premiados opcionales. Google y sus socios pueden procesar identificadores del dispositivo, dirección IP, interacciones con anuncios y datos de diagnóstico para ofrecer, medir y proteger la publicidad, según la configuración y el consentimiento aplicables.</p><p>Al completar un video premiado, el usuario gratuito recibe 20 minutos sin banners ni anuncios intersticiales. El beneficio puede activarse hasta tres veces al día. El contenido del inventario y de la lista de compras no se envía a Somaio ni se utiliza para personalizar anuncios.</p></section>
+    <section><h2>Compras dentro de la aplicación</h2><p>¿Hay en Casa? PRO es una compra única que elimina los anuncios permanentemente. El pago es procesado por Google Play. Somaio no recibe ni almacena números de tarjeta o datos bancarios. Google Play proporciona los datos técnicos necesarios para confirmar y restaurar la licencia PRO.</p></section>
+    <section><h2>Almacenamiento y control</h2><p>Los datos funcionales permanecen en el dispositivo y pueden eliminarse al borrar los datos o desinstalar la aplicación. El límite diario y la hora de finalización de la pausa sin anuncios también se guardan localmente.</p></section>
+    <section><h2>Servicios de terceros</h2><p>Consulta la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y la información sobre <a href="https://policies.google.com/technologies/ads">publicidad de Google</a>. Cuando sea necesario, la aplicación debe solicitar las opciones de consentimiento aplicables.</p></section>
+    <section><h2>Niños</h2><p>La aplicación es una herramienta de organización doméstica destinada al público general y no fue diseñada específicamente para niños. No recopilamos conscientemente datos personales directamente de niños.</p></section>
+    <section><h2>Cambios y contacto</h2><p>Esta política puede actualizarse cuando cambien las funciones o los requisitos legales. Preguntas: <a href="mailto:somaioapps@gmail.com">somaioapps@gmail.com</a>.</p></section>
+  </article>
+
+  <footer>Somaio Apps · somaioapps@gmail.com</footer>
 </main>
+<script>
+  const titles={pt:'Política de Privacidade',en:'Privacy Policy',es:'Política de Privacidad'};
+  const available=['pt','en','es'];
+  function selectLanguage(code){
+    const lang=available.includes(code)?code:'pt';
+    document.documentElement.lang=lang==='pt'?'pt-BR':lang;
+    document.title=titles[lang]+' — Tem em Casa?';
+    document.getElementById('page-title').textContent=titles[lang];
+    document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));
+    document.querySelectorAll('[data-select]').forEach(el=>el.classList.toggle('active',el.dataset.select===lang));
+    const url=new URL(window.location.href);url.searchParams.set('lang',lang);history.replaceState({},'',url);
+  }
+  document.querySelectorAll('[data-select]').forEach(button=>button.addEventListener('click',()=>selectLanguage(button.dataset.select)));
+  const requested=new URLSearchParams(window.location.search).get('lang');
+  selectLanguage(requested||(navigator.language||'pt').slice(0,2));
+</script>
 </body>
 </html>
